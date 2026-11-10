@@ -1,0 +1,1717 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closing Desk — Notion Template for Solo Real Estate Agents</title>
+    <meta
+      name="description"
+      content="Closing Desk is a Notion workspace built for solo real estate agents to track every contract deadline, calculate net take-home commission after brokerage splits and taxes, and keep client records portable."
+    />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Closing Desk — Never miss a contract deadline." />
+    <meta
+      property="og:description"
+      content="One organised Notion workspace for solo realtors: color-coded contract deadlines, real take-home commission calculator, and an exportable client CRM."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/product/dashboard-preview.webp" />
+
+    <!-- Favicon Placeholder (replace path when brand favicon asset is added) -->
+    <link rel="icon" href="assets/other/favicon.ico" sizes="any" />
+
+    <!-- Google Fonts: Manrope & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6 Free -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ===================================================================
+         A. Sticky Header & Navigation
+         =================================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand" data-asset-wrapper aria-label="Closing Desk home">
+          <!-- BRAND LOGO IMAGE
+               Place closing-desk-logo.svg inside img/logo/ to display your supplied mark.
+               When absent, the clean CSS typographic wordmark renders automatically.
+          -->
+          <img
+            src="img/logo/closing-desk-logo.svg"
+            alt="Closing Desk"
+            class="brand__logo optional-asset-img"
+            data-optional-img
+          />
+          <span class="brand__fallback" aria-hidden="true">
+            <span class="brand__mark">CD</span>
+            <span class="brand__name">Closing Desk</span>
+          </span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary navigation">
+          <div class="nav-links">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#workspace-preview" class="nav-link">Workspace</a>
+            <a href="#included" class="nav-link">What's Included</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+          </div>
+          <a href="https://agentflowstudio.gumroad.com/l/rntxle" class="btn btn--primary btn--sm" data-checkout-cta>
+            Get Closing Desk
+          </a>
+        </nav>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open navigation menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <div class="mobile-menu__links">
+          <a href="#features" class="mobile-menu__link">Features</a>
+          <a href="#workspace-preview" class="mobile-menu__link">Workspace Preview</a>
+          <a href="#setup" class="mobile-menu__link">Simple Setup</a>
+          <a href="#included" class="mobile-menu__link">What's Included</a>
+          <a href="#faq" class="mobile-menu__link">FAQ</a>
+        </div>
+        <a href="https://agentflowstudio.gumroad.com/l/rntxle" class="btn btn--primary" style="width: 100%;" data-checkout-cta>
+          Get Closing Desk
+        </a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- =================================================================
+           B. Hero Section + Realistic Notion Workspace Mockup
+           ================================================================= -->
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+              <span>Notion Template for Realtors</span>
+            </div>
+            <h1 class="hero-title">Never miss a contract deadline.</h1>
+            <p class="hero-copy">
+              Closing Desk gives you one organised workspace to track deadlines, calculate your real
+              take-home commission and manage your real estate clients — without losing control of
+              your business.
+            </p>
+            <div class="hero-actions">
+              <a href="https://agentflowstudio.gumroad.com/l/rntxle" class="btn btn--primary btn--lg" data-checkout-cta>
+                Get Closing Desk
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="#features" class="btn btn--secondary btn--lg">Explore Features</a>
+            </div>
+            <div class="hero-facts">
+              <span class="hero-fact">
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                Notion's free plan is sufficient
+              </span>
+              <span class="hero-fact">
+                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                Set up in ~10 minutes
+              </span>
+              <span class="hero-fact">
+                <i class="fa-solid fa-file-csv" aria-hidden="true"></i>
+                Exportable client CRM
+              </span>
+            </div>
+          </div>
+
+          <!-- PRODUCT PREVIEW IMAGE & NOTION INTERFACE MOCKUP
+               Replace img/product/hero-workspace-preview.webp to override with a static screenshot.
+          -->
+          <div class="preview-media" data-asset-wrapper>
+            <img
+              src="img/product/hero-workspace-preview.webp"
+              alt="Closing Desk Notion workspace overview showing contract deadlines, status indicators, and net commission calculations"
+              class="optional-asset-img"
+              data-optional-img
+            />
+
+            <div class="notion-frame" aria-label="Interactive Closing Desk workspace preview">
+              <div class="notion-topbar">
+                <div class="notion-breadcrumb">
+                  <i class="fa-solid fa-table-columns" aria-hidden="true"></i>
+                  <span>Closing Desk</span>
+                  <span class="notion-breadcrumb__slash">/</span>
+                  <span class="notion-breadcrumb__active">Active Deal Desk</span>
+                </div>
+                <span class="notion-sample-tag">Sample Deals Loaded</span>
+              </div>
+
+              <div class="notion-body">
+                <div class="notion-page-title">
+                  <div class="notion-page-title__heading">
+                    <span class="notion-page-icon">
+                      <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                    </span>
+                    <span>Transaction &amp; Deadline Overview</span>
+                  </div>
+                </div>
+
+                <!-- Summary Metrics -->
+                <div class="notion-kpi-grid">
+                  <div class="notion-kpi">
+                    <div class="notion-kpi__label">Active Sample Deals</div>
+                    <div class="notion-kpi__value tnum">3 Files</div>
+                    <div class="notion-kpi__sub">2 Sales · 1 Rental</div>
+                  </div>
+                  <div class="notion-kpi">
+                    <div class="notion-kpi__label">Next Deadline</div>
+                    <div class="notion-kpi__value tnum">In 2 days</div>
+                    <div class="notion-kpi__sub">Loan commitment</div>
+                  </div>
+                  <div class="notion-kpi">
+                    <div class="notion-kpi__label">Projected Take-Home</div>
+                    <div class="notion-kpi__value notion-kpi__value--net tnum">$17,141</div>
+                    <div class="notion-kpi__sub">After split, tax &amp; costs</div>
+                  </div>
+                </div>
+
+                <!-- Deadline Filter Tabs -->
+                <div class="notion-tabs" role="tablist" aria-label="Filter upcoming deadlines">
+                  <button
+                    type="button"
+                    class="notion-tab is-active"
+                    role="tab"
+                    aria-selected="true"
+                    data-hero-filter="all"
+                  >
+                    <i class="fa-solid fa-list-ul" aria-hidden="true"></i>
+                    All Deadlines
+                  </button>
+                  <button
+                    type="button"
+                    class="notion-tab"
+                    role="tab"
+                    aria-selected="false"
+                    data-hero-filter="urgent"
+                  >
+                    <i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>
+                    Urgent Alerts
+                  </button>
+                  <button
+                    type="button"
+                    class="notion-tab"
+                    role="tab"
+                    aria-selected="false"
+                    data-hero-filter="ontrack"
+                  >
+                    <i class="fa-regular fa-circle-check" aria-hidden="true"></i>
+                    Upcoming / Tracked
+                  </button>
+                </div>
+
+                <!-- Deadline Rows -->
+                <div class="notion-table-wrap">
+                  <table class="notion-table">
+                    <thead>
+                      <tr>
+                        <th>Milestone</th>
+                        <th>Deal</th>
+                        <th>Due Date</th>
+                        <th>Alert</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr data-hero-row="urgent">
+                        <td class="cell-title">HOA Disclosure Review</td>
+                        <td class="cell-muted">412 Maple Ridge Rd</td>
+                        <td class="cell-muted tnum">Oct 14 (-1d)</td>
+                        <td><span class="status-pill status-pill--red">Overdue</span></td>
+                      </tr>
+                      <tr data-hero-row="urgent">
+                        <td class="cell-title">Loan Commitment Letter</td>
+                        <td class="cell-muted">412 Maple Ridge Rd</td>
+                        <td class="cell-muted tnum">Oct 17 (2d)</td>
+                        <td><span class="status-pill status-pill--orange">Due Soon</span></td>
+                      </tr>
+                      <tr data-hero-row="ontrack">
+                        <td class="cell-title">Inspection Repair Sign-off</td>
+                        <td class="cell-muted">118 Oakwood Ave</td>
+                        <td class="cell-muted tnum">Oct 21 (6d)</td>
+                        <td><span class="status-pill status-pill--yellow">This Week</span></td>
+                      </tr>
+                      <tr data-hero-row="ontrack">
+                        <td class="cell-title">Move-In Walkthrough</td>
+                        <td class="cell-muted">74 Harbor St #4B</td>
+                        <td class="cell-muted tnum">Oct 29 (14d)</td>
+                        <td><span class="status-pill status-pill--green">On Track</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- Active Transaction Take-Home List -->
+                <div class="hero-deals-strip">
+                  <div class="hero-deals-strip__label">
+                    <span>Transaction Commission Snapshot (Examples)</span>
+                    <span>Take-Home Net</span>
+                  </div>
+                  <div class="hero-deal-row">
+                    <div class="hero-deal-row__left">
+                      <span class="tag-chip">Buyer · Financed</span>
+                      <span class="hero-deal-row__addr">412 Maple Ridge Rd</span>
+                    </div>
+                    <span class="hero-deal-row__net tnum">$6,911 net</span>
+                  </div>
+                  <div class="hero-deal-row">
+                    <div class="hero-deal-row__left">
+                      <span class="tag-chip">Seller Listing</span>
+                      <span class="hero-deal-row__addr">118 Oakwood Ave</span>
+                    </div>
+                    <span class="hero-deal-row__net tnum">$8,640 net</span>
+                  </div>
+                  <div class="hero-deal-row">
+                    <div class="hero-deal-row__left">
+                      <span class="tag-chip">Rental · Landlord</span>
+                      <span class="hero-deal-row__addr">74 Harbor St #4B</span>
+                    </div>
+                    <span class="hero-deal-row__net tnum">$1,590 net</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           C. The Problem / Value Proposition Section
+           ================================================================= -->
+      <section class="section section--white" id="problem">
+        <div class="container problem-layout">
+          <div data-reveal>
+            <span class="eyebrow">
+              <i class="fa-solid fa-compass" aria-hidden="true"></i>
+              Built for solo agents
+            </span>
+            <h2 class="section-title">
+              Your deals have enough moving parts. Your workspace shouldn't.
+            </h2>
+            <p class="problem-lead">
+              Most solo agents track contract contingencies in email threads, property showings in
+              notes apps, client details inside a brokerage-owned CRM, and actual commission take-home
+              in rough spreadsheets. When deadlines overlap across multiple files, vital details fall
+              through the cracks.
+            </p>
+            <div class="problem-highlight">
+              Closing Desk puts every contract milestone, real commission calculation, and exportable
+              client relationship into one calm Notion workspace that stays yours regardless of where
+              you hang your licence.
+            </div>
+          </div>
+
+          <div class="problem-cards">
+            <div class="contrast-row" data-reveal data-reveal-delay="1">
+              <div class="contrast-row__icon">
+                <i class="fa-regular fa-bell" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="contrast-row__title">Stop hunting through PDFs for contingency dates</h3>
+                <p class="contrast-row__desc">
+                  Every earnest money deposit, inspection window, loan commitment, and lease date sits
+                  in one structured tracker sorted by colour-coded urgency.
+                </p>
+              </div>
+            </div>
+
+            <div class="contrast-row" data-reveal data-reveal-delay="2">
+              <div class="contrast-row__icon">
+                <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="contrast-row__title">Know what you keep before closing day</h3>
+                <p class="contrast-row__desc">
+                  Gross commission numbers can be misleading. Account for brokerage splits, per-deal
+                  expenses, and estimated tax reserves right inside each transaction file.
+                </p>
+              </div>
+            </div>
+
+            <div class="contrast-row" data-reveal data-reveal-delay="3">
+              <div class="contrast-row__icon">
+                <i class="fa-solid fa-user-shield" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="contrast-row__title">Own your client list if you switch brokers</h3>
+                <p class="contrast-row__desc">
+                  Your leads, clients, properties, and showing logs belong to you. Export your CRM
+                  databases to CSV in seconds whenever you need a portable backup.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           D. Features Section (Distinct Asymmetric Layouts)
+           ================================================================= -->
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">
+              <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+              Core Capabilities
+            </span>
+            <h2 class="section-title">Everything you need to stay on top of every deal.</h2>
+            <p class="section-subtitle">
+              Every component is designed around real estate transactions—without bloated team
+              dashboards or features a solo agent never touches.
+            </p>
+          </div>
+
+          <div class="features-stack">
+            <!-- Feature 1 (Prominent Showcase): Deadline Tracker -->
+            <article class="feature-showcase" data-reveal>
+              <div class="feature-showcase__copy">
+                <div class="feature-label">
+                  <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                  <span>01 · Core System</span>
+                </div>
+                <h3 class="feature-title">Deadline Tracker</h3>
+                <p class="feature-desc">
+                  Keep every active buyer, seller, and rental milestone in a single structured view
+                  with exact due dates and automatic day countdowns based on the date you set.
+                </p>
+                <ul class="feature-bullets">
+                  <li>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <span>Track important contract and lease deadlines across all active files</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <span>See clear due dates alongside live days-remaining countdowns</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <span>Spot priorities fast with Red, Orange, Yellow, and Green status alerts</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="feature-showcase__visual preview-media" data-asset-wrapper>
+                <!-- FEATURE SCREENSHOT PLACEHOLDER: Deadline Tracker
+                     Drop img/product/feature-deadline-tracker.webp here to override mockup.
+                -->
+                <img
+                  src="img/product/feature-deadline-tracker.webp"
+                  alt="Closing Desk Deadline Tracker database showing colour-coded red, orange, yellow, and green alerts"
+                  class="optional-asset-img"
+                  data-optional-img
+                />
+
+                <div class="notion-frame">
+                  <div class="notion-topbar">
+                    <div class="notion-breadcrumb">
+                      <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                      <span class="notion-breadcrumb__active">Master Deadline View</span>
+                    </div>
+                    <span class="notion-sample-tag">Sorted by Due Date</span>
+                  </div>
+                  <div class="notion-table-wrap">
+                    <table class="notion-table">
+                      <thead>
+                        <tr>
+                          <th>Deadline</th>
+                          <th>Property / Client</th>
+                          <th>Countdown</th>
+                          <th>Alert Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="cell-title">HOA Document Sign-off</td>
+                          <td class="cell-muted">412 Maple Ridge · Mercer</td>
+                          <td class="tnum">-1 day</td>
+                          <td><span class="status-pill status-pill--red">Red · Action Due</span></td>
+                        </tr>
+                        <tr>
+                          <td class="cell-title">Loan Commitment Due</td>
+                          <td class="cell-muted">412 Maple Ridge · Mercer</td>
+                          <td class="tnum">2 days left</td>
+                          <td><span class="status-pill status-pill--orange">Orange · Urgent</span></td>
+                        </tr>
+                        <tr>
+                          <td class="cell-title">Inspection Negotiation</td>
+                          <td class="cell-muted">118 Oakwood · Alvarez</td>
+                          <td class="tnum">6 days left</td>
+                          <td><span class="status-pill status-pill--yellow">Yellow · Soon</span></td>
+                        </tr>
+                        <tr>
+                          <td class="cell-title">Lease Deposit Cleared</td>
+                          <td class="cell-muted">74 Harbor St #4B · Patel</td>
+                          <td class="tnum">Complete</td>
+                          <td><span class="status-pill status-pill--green">Green · On Track</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="alert-legend">
+                    <span class="alert-legend__item">
+                      <span class="status-pill status-pill--red">Red</span> Overdue / Due Today
+                    </span>
+                    <span class="alert-legend__item">
+                      <span class="status-pill status-pill--orange">Orange</span> Immediate Attention
+                    </span>
+                    <span class="alert-legend__item">
+                      <span class="status-pill status-pill--yellow">Yellow</span> Upcoming Window
+                    </span>
+                    <span class="alert-legend__item">
+                      <span class="status-pill status-pill--green">Green</span> On Track / Done
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Feature 2 (Interactive Set Explorer): Ready-made Deadline Sets -->
+            <article class="deadline-sets-panel" data-reveal>
+              <div class="deadline-sets-top">
+                <div class="deadline-sets-intro">
+                  <div class="feature-label">
+                    <i class="fa-regular fa-clone" aria-hidden="true"></i>
+                    <span>02 · Ready-Made Templates</span>
+                  </div>
+                  <h3 class="feature-title">Ready-made Deadline Sets</h3>
+                  <p class="feature-desc" style="margin-bottom: 0;">
+                    Includes starter deadline rows for <strong>Buyer (financed and cash)</strong>,
+                    <strong>Seller</strong>, and <strong>Rental (tenant and landlord)</strong> deals.
+                    Copy the relevant rows into your workspace and customise the day counts to match
+                    your state contracts or local leases.
+                  </p>
+                </div>
+
+                <div class="set-switcher" role="tablist" aria-label="Select deal type deadline set">
+                  <button
+                    type="button"
+                    class="set-tab is-active"
+                    role="tab"
+                    aria-selected="true"
+                    data-set-key="buyer-financed"
+                  >
+                    Buyer (Financed)
+                  </button>
+                  <button
+                    type="button"
+                    class="set-tab"
+                    role="tab"
+                    aria-selected="false"
+                    data-set-key="buyer-cash"
+                  >
+                    Buyer (Cash)
+                  </button>
+                  <button
+                    type="button"
+                    class="set-tab"
+                    role="tab"
+                    aria-selected="false"
+                    data-set-key="seller"
+                  >
+                    Seller
+                  </button>
+                  <button
+                    type="button"
+                    class="set-tab"
+                    role="tab"
+                    aria-selected="false"
+                    data-set-key="rental"
+                  >
+                    Rental (Tenant &amp; Landlord)
+                  </button>
+                </div>
+              </div>
+
+              <div class="set-rows-grid" id="deadline-set-grid" aria-live="polite">
+                <!-- Populated cleanly via js/main.js -->
+              </div>
+
+              <p class="feature-note">
+                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                Notion cannot automatically generate deadline rows—simply copy the rows you need
+                from these included sets and update the editable day counts to fit your contract.
+              </p>
+            </article>
+
+            <!-- Feature 3 (Prominent Reverse Showcase): Take-home Commission Calculator -->
+            <article class="feature-showcase feature-showcase--reverse" data-reveal>
+              <div class="feature-showcase__copy">
+                <div class="feature-label">
+                  <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                  <span>03 · Financial Clarity</span>
+                </div>
+                <h3 class="feature-title">Take-home Commission Calculator</h3>
+                <p class="feature-desc">
+                  Gross commission checks look very different after brokerage fees, deal expenses,
+                  and taxes. Every transaction calculates your actual net keep so your personal budget
+                  reflects reality.
+                </p>
+                <ul class="feature-bullets">
+                  <li>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <span>Enter gross commission rate and property price or flat fee</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <span>Deduct your specific brokerage split automatically</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <span>Log per-deal costs (photos, staging, admin fees, mileage)</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <span>Set aside estimated tax percentages per closing</span>
+                  </li>
+                </ul>
+                <p class="feature-note">
+                  Try adjusting the example numbers on the preview. All rates and tax percentages
+                  inside Closing Desk are editable examples, not tax or legal advice.
+                </p>
+              </div>
+
+              <div class="feature-showcase__visual preview-media" data-asset-wrapper>
+                <!-- FEATURE SCREENSHOT PLACEHOLDER: Commission Calculator
+                     Drop img/product/feature-commission-calculator.webp here to override widget.
+                -->
+                <img
+                  src="img/product/feature-commission-calculator.webp"
+                  alt="Closing Desk Take-home Commission Calculator showing brokerage split, deal expenses, and tax reserve breakdown"
+                  class="optional-asset-img"
+                  data-optional-img
+                />
+
+                <div class="calc-widget notion-frame" aria-label="Interactive commission calculator preview">
+                  <div class="notion-topbar">
+                    <div class="notion-breadcrumb">
+                      <i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i>
+                      <span class="notion-breadcrumb__active">Commission Breakdown · Example Deal</span>
+                    </div>
+                    <span class="notion-sample-tag">Editable Inputs</span>
+                  </div>
+
+                  <div class="calc-inputs">
+                    <div class="calc-field">
+                      <label for="calc-price">Sale Price ($)</label>
+                      <div class="calc-input-wrap">
+                        <span class="calc-prefix">$</span>
+                        <input
+                          id="calc-price"
+                          type="number"
+                          class="calc-input"
+                          value="425000"
+                          min="0"
+                          step="5000"
+                        />
+                      </div>
+                    </div>
+                    <div class="calc-field">
+                      <label for="calc-rate">Gross Commission (%)</label>
+                      <div class="calc-input-wrap">
+                        <input
+                          id="calc-rate"
+                          type="number"
+                          class="calc-input"
+                          value="3.0"
+                          min="0"
+                          max="15"
+                          step="0.1"
+                        />
+                        <span class="calc-suffix">%</span>
+                      </div>
+                    </div>
+                    <div class="calc-field">
+                      <label for="calc-split">Your Brokerage Split (%)</label>
+                      <div class="calc-input-wrap">
+                        <input
+                          id="calc-split"
+                          type="number"
+                          class="calc-input"
+                          value="80"
+                          min="0"
+                          max="100"
+                          step="1"
+                        />
+                        <span class="calc-suffix">%</span>
+                      </div>
+                    </div>
+                    <div class="calc-field">
+                      <label for="calc-tax">Est. Tax Set-Aside (%)</label>
+                      <div class="calc-input-wrap">
+                        <input
+                          id="calc-tax"
+                          type="number"
+                          class="calc-input"
+                          value="25"
+                          min="0"
+                          max="60"
+                          step="1"
+                        />
+                        <span class="calc-suffix">%</span>
+                      </div>
+                    </div>
+                    <div class="calc-field" style="grid-column: 1 / -1;">
+                      <label for="calc-expenses">Deal Expenses (Photos, Marketing, Fees)</label>
+                      <div class="calc-input-wrap">
+                        <span class="calc-prefix">$</span>
+                        <input
+                          id="calc-expenses"
+                          type="number"
+                          class="calc-input"
+                          value="985"
+                          min="0"
+                          step="25"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="calc-ledger">
+                    <div class="calc-line">
+                      <span class="calc-line__label">Gross Commission</span>
+                      <span class="calc-line__val tnum" id="calc-out-gross">$12,750</span>
+                    </div>
+                    <div class="calc-line">
+                      <span class="calc-line__label">Brokerage Split Portion</span>
+                      <span class="calc-line__val calc-line__val--deduct tnum" id="calc-out-brokerage">-$2,550</span>
+                    </div>
+                    <div class="calc-line">
+                      <span class="calc-line__label">Tracked Deal Expenses</span>
+                      <span class="calc-line__val calc-line__val--deduct tnum" id="calc-out-expenses">-$985</span>
+                    </div>
+                    <div class="calc-line">
+                      <span class="calc-line__label">Estimated Tax Reserve</span>
+                      <span class="calc-line__val calc-line__val--deduct tnum" id="calc-out-tax">-$2,304</span>
+                    </div>
+                    <div class="calc-total">
+                      <span class="calc-total__label">Actual Take-Home</span>
+                      <span class="calc-total__amount tnum" id="calc-out-net">$6,911</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Features 4, 5 & 6 (Asymmetric Bento Grid) -->
+            <div class="features-bento">
+              <!-- Feature 4: CRM Sidekick (Wider card) -->
+              <article class="bento-card bento-card--crm" data-reveal>
+                <div>
+                  <div class="bento-card__icon">
+                    <i class="fa-regular fa-address-book" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="bento-card__title">CRM Sidekick</h3>
+                  <p class="bento-card__desc">
+                    Manage leads, organise past and active clients, track properties of interest, and
+                    log showings inside connected Notion databases. Your contact history stays yours—export
+                    any table to CSV if you ever change brokerages.
+                  </p>
+                </div>
+
+                <div style="display: grid; gap: 12px;">
+                  <div class="crm-mini-list" aria-label="Sample CRM records">
+                    <div class="crm-mini-row">
+                      <span class="cell-title">Elena Mercer</span>
+                      <span class="status-pill status-pill--orange">Under Contract</span>
+                      <span class="cell-muted">Buyer · $425k</span>
+                    </div>
+                    <div class="crm-mini-row">
+                      <span class="cell-title">David Alvarez</span>
+                      <span class="status-pill status-pill--yellow">Active Listing</span>
+                      <span class="cell-muted">Seller · $510k</span>
+                    </div>
+                    <div class="crm-mini-row">
+                      <span class="cell-title">Priya Patel</span>
+                      <span class="status-pill status-pill--green">Showings Log (3)</span>
+                      <span class="cell-muted">Landlord · Rental</span>
+                    </div>
+                  </div>
+                  <span class="csv-badge">
+                    <i class="fa-solid fa-download" aria-hidden="true"></i>
+                    Export Client List to CSV Anytime
+                  </span>
+                </div>
+              </article>
+
+              <!-- Feature 5: Sales & Rentals -->
+              <article class="bento-card" data-reveal data-reveal-delay="1">
+                <div>
+                  <div class="bento-card__icon">
+                    <i class="fa-regular fa-building" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="bento-card__title">Sales &amp; Rentals</h3>
+                  <p class="bento-card__desc">
+                    Whether you handle buyer purchases, seller listings, or landlord and tenant leases,
+                    keep properties, clients, and transaction dates organised under one roof.
+                  </p>
+                </div>
+                <div class="mini-pill-list">
+                  <span class="mini-pill">Buyer Closings</span>
+                  <span class="mini-pill">Seller Listings</span>
+                  <span class="mini-pill">Tenant Leases</span>
+                  <span class="mini-pill">Landlord Representation</span>
+                </div>
+              </article>
+
+              <!-- Feature 6: Sample Deals -->
+              <article class="bento-card" data-reveal data-reveal-delay="2">
+                <div>
+                  <div class="bento-card__icon">
+                    <i class="fa-regular fa-folder-open" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="bento-card__title">Sample Deals Preloaded</h3>
+                  <p class="bento-card__desc">
+                    Never stare at an empty database. Closing Desk arrives with complete sample deals
+                    so you can see how deadlines, properties, clients, and commission rows link before
+                    entering your own transactions.
+                  </p>
+                </div>
+                <div class="mini-pill-list">
+                  <span class="mini-pill">Working Formulas</span>
+                  <span class="mini-pill">Clear to Delete Anytime</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           E. Detailed Product Preview Section
+           ================================================================= -->
+      <section class="section section--subtle" id="workspace-preview">
+        <div class="container">
+          <div class="section-header section-header--center" data-reveal>
+            <span class="eyebrow">
+              <i class="fa-solid fa-desktop" aria-hidden="true"></i>
+              Inside the Workspace
+            </span>
+            <h2 class="section-title">
+              See what your business looks like when everything is organised.
+            </h2>
+            <p class="section-subtitle">
+              Switch between views below to inspect the interconnected Notion databases inside
+              Closing Desk—all pre-populated with sample data.
+            </p>
+          </div>
+
+          <!-- FULL WORKSPACE PREVIEW IMAGE PLACEHOLDER
+               Place img/product/dashboard-preview.webp to replace the interactive HTML preview with a static screenshot.
+          -->
+          <div class="preview-media" data-asset-wrapper data-reveal>
+            <img
+              src="img/product/dashboard-preview.webp"
+              alt="Full Closing Desk Notion workspace dashboard showing deals, deadlines, commission breakdown, client CRM, and showings"
+              class="optional-asset-img"
+              data-optional-img
+            />
+
+            <div class="workspace-shell notion-frame">
+              <div class="workspace-nav-bar">
+                <div class="notion-breadcrumb">
+                  <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                  <span>Closing Desk</span>
+                  <span class="notion-breadcrumb__slash">/</span>
+                  <span class="notion-breadcrumb__active" id="workspace-active-crumb">Deal Dashboard</span>
+                </div>
+
+                <div class="workspace-view-tabs" role="tablist" aria-label="Workspace sections">
+                  <button
+                    type="button"
+                    class="workspace-tab-btn is-active"
+                    role="tab"
+                    aria-selected="true"
+                    data-workspace-tab="dashboard"
+                    data-crumb-label="Deal Dashboard"
+                  >
+                    <i class="fa-solid fa-table-columns" aria-hidden="true"></i>
+                    Deal Dashboard
+                  </button>
+                  <button
+                    type="button"
+                    class="workspace-tab-btn"
+                    role="tab"
+                    aria-selected="false"
+                    data-workspace-tab="deadlines"
+                    data-crumb-label="Deadline Tracker"
+                  >
+                    <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                    Deadline Tracker
+                  </button>
+                  <button
+                    type="button"
+                    class="workspace-tab-btn"
+                    role="tab"
+                    aria-selected="false"
+                    data-workspace-tab="commissions"
+                    data-crumb-label="Commission Breakdown"
+                  >
+                    <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                    Commission Breakdown
+                  </button>
+                  <button
+                    type="button"
+                    class="workspace-tab-btn"
+                    role="tab"
+                    aria-selected="false"
+                    data-workspace-tab="crm"
+                    data-crumb-label="Client CRM"
+                  >
+                    <i class="fa-regular fa-address-book" aria-hidden="true"></i>
+                    Client CRM
+                  </button>
+                  <button
+                    type="button"
+                    class="workspace-tab-btn"
+                    role="tab"
+                    aria-selected="false"
+                    data-workspace-tab="properties"
+                    data-crumb-label="Properties & Showings"
+                  >
+                    <i class="fa-regular fa-building" aria-hidden="true"></i>
+                    Properties &amp; Showings
+                  </button>
+                </div>
+              </div>
+
+              <!-- View 1: Deal Dashboard -->
+              <div class="workspace-panel is-active" data-workspace-panel="dashboard" role="tabpanel">
+                <div class="workspace-panel-grid">
+                  <div class="notion-kpi">
+                    <div class="notion-kpi__label">Active Transactions</div>
+                    <div class="notion-kpi__value tnum">3 Deals</div>
+                    <div class="notion-kpi__sub">Buyer · Seller · Rental</div>
+                  </div>
+                  <div class="notion-kpi">
+                    <div class="notion-kpi__label">Overdue / Due Soon</div>
+                    <div class="notion-kpi__value tnum" style="color: var(--status-red-text);">2 Deadlines</div>
+                    <div class="notion-kpi__sub">Red &amp; Orange Alerts</div>
+                  </div>
+                  <div class="notion-kpi">
+                    <div class="notion-kpi__label">Gross Pipeline (Sample)</div>
+                    <div class="notion-kpi__value tnum">$30,850</div>
+                    <div class="notion-kpi__sub">Before split &amp; tax</div>
+                  </div>
+                  <div class="notion-kpi">
+                    <div class="notion-kpi__label">Projected Net Take-Home</div>
+                    <div class="notion-kpi__value notion-kpi__value--net tnum">$17,141</div>
+                    <div class="notion-kpi__sub">After split, costs &amp; reserve</div>
+                  </div>
+                </div>
+
+                <div class="workspace-two-col">
+                  <div class="sub-panel">
+                    <div class="sub-panel__head">
+                      <span>Priority Deadlines</span>
+                      <span class="tag-chip">Next 7 Days</span>
+                    </div>
+                    <div class="notion-table-wrap">
+                      <table class="notion-table">
+                        <thead>
+                          <tr>
+                            <th>Task</th>
+                            <th>Deal</th>
+                            <th>Alert</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="cell-title">HOA Disclosure Sign-off</td>
+                            <td class="cell-muted">412 Maple Ridge Rd</td>
+                            <td><span class="status-pill status-pill--red">Overdue</span></td>
+                          </tr>
+                          <tr>
+                            <td class="cell-title">Loan Commitment</td>
+                            <td class="cell-muted">412 Maple Ridge Rd</td>
+                            <td><span class="status-pill status-pill--orange">In 2d</span></td>
+                          </tr>
+                          <tr>
+                            <td class="cell-title">Inspection Response</td>
+                            <td class="cell-muted">118 Oakwood Ave</td>
+                            <td><span class="status-pill status-pill--yellow">In 6d</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="sub-panel">
+                    <div class="sub-panel__head">
+                      <span>Active Deal Pipeline</span>
+                      <span class="tag-chip">Sales &amp; Rentals</span>
+                    </div>
+                    <div class="notion-table-wrap">
+                      <table class="notion-table">
+                        <thead>
+                          <tr>
+                            <th>Property / Side</th>
+                            <th>Client</th>
+                            <th>Net Keep</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="cell-title">412 Maple Ridge · Buyer</td>
+                            <td class="cell-muted">Elena Mercer</td>
+                            <td class="tnum" style="font-weight: 600; color: var(--accent-primary);">$6,911</td>
+                          </tr>
+                          <tr>
+                            <td class="cell-title">118 Oakwood Ave · Seller</td>
+                            <td class="cell-muted">David Alvarez</td>
+                            <td class="tnum" style="font-weight: 600; color: var(--accent-primary);">$8,640</td>
+                          </tr>
+                          <tr>
+                            <td class="cell-title">74 Harbor St #4B · Rental</td>
+                            <td class="cell-muted">Priya Patel</td>
+                            <td class="tnum" style="font-weight: 600; color: var(--accent-primary);">$1,590</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- View 2: Deadline Tracker -->
+              <div class="workspace-panel" data-workspace-panel="deadlines" role="tabpanel" hidden>
+                <div class="notion-table-wrap">
+                  <table class="notion-table">
+                    <thead>
+                      <tr>
+                        <th>Deadline Item</th>
+                        <th>Linked Transaction</th>
+                        <th>Set Type</th>
+                        <th>Due Date</th>
+                        <th>Days Left</th>
+                        <th>Status Indicator</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="cell-title">HOA Document Sign-off</td>
+                        <td class="cell-muted">412 Maple Ridge Rd</td>
+                        <td><span class="tag-chip">Buyer · Financed</span></td>
+                        <td class="tnum">Oct 14</td>
+                        <td class="tnum">-1 day</td>
+                        <td><span class="status-pill status-pill--red">Red · Overdue</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">Loan Commitment Letter</td>
+                        <td class="cell-muted">412 Maple Ridge Rd</td>
+                        <td><span class="tag-chip">Buyer · Financed</span></td>
+                        <td class="tnum">Oct 17</td>
+                        <td class="tnum">2 days</td>
+                        <td><span class="status-pill status-pill--orange">Orange · Urgent</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">Inspection Repair Response</td>
+                        <td class="cell-muted">118 Oakwood Ave</td>
+                        <td><span class="tag-chip">Seller Listing</span></td>
+                        <td class="tnum">Oct 21</td>
+                        <td class="tnum">6 days</td>
+                        <td><span class="status-pill status-pill--yellow">Yellow · Upcoming</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">Deed Prep &amp; Payoff Request</td>
+                        <td class="cell-muted">118 Oakwood Ave</td>
+                        <td><span class="tag-chip">Seller Listing</span></td>
+                        <td class="tnum">Oct 27</td>
+                        <td class="tnum">12 days</td>
+                        <td><span class="status-pill status-pill--green">Green · On Track</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">Move-In Walkthrough &amp; Keys</td>
+                        <td class="cell-muted">74 Harbor St #4B</td>
+                        <td><span class="tag-chip">Rental · Landlord</span></td>
+                        <td class="tnum">Oct 29</td>
+                        <td class="tnum">14 days</td>
+                        <td><span class="status-pill status-pill--green">Green · On Track</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- View 3: Commission Breakdown -->
+              <div class="workspace-panel" data-workspace-panel="commissions" role="tabpanel" hidden>
+                <div class="notion-table-wrap">
+                  <table class="notion-table">
+                    <thead>
+                      <tr>
+                        <th>Deal</th>
+                        <th>Value / Rent</th>
+                        <th>Gross Comm.</th>
+                        <th>Brokerage Split</th>
+                        <th>Deal Expenses</th>
+                        <th>Est. Tax Reserve</th>
+                        <th>Net Take-Home</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="cell-title">412 Maple Ridge Rd (Buyer)</td>
+                        <td class="tnum">$425,000</td>
+                        <td class="tnum">$12,750</td>
+                        <td class="tnum cell-muted">-$2,550 (80/20)</td>
+                        <td class="tnum cell-muted">-$985</td>
+                        <td class="tnum cell-muted">-$2,304</td>
+                        <td class="tnum" style="font-weight: 700; color: var(--accent-primary);">$6,911</td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">118 Oakwood Ave (Seller)</td>
+                        <td class="tnum">$510,000</td>
+                        <td class="tnum">$15,300</td>
+                        <td class="tnum cell-muted">-$3,060 (80/20)</td>
+                        <td class="tnum cell-muted">-$720</td>
+                        <td class="tnum cell-muted">-$2,880</td>
+                        <td class="tnum" style="font-weight: 700; color: var(--accent-primary);">$8,640</td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">74 Harbor St #4B (Rental)</td>
+                        <td class="tnum">$2,800/mo</td>
+                        <td class="tnum">$2,800</td>
+                        <td class="tnum cell-muted">-$560 (80/20)</td>
+                        <td class="tnum cell-muted">-$120</td>
+                        <td class="tnum cell-muted">-$530</td>
+                        <td class="tnum" style="font-weight: 700; color: var(--accent-primary);">$1,590</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- View 4: Client CRM -->
+              <div class="workspace-panel" data-workspace-panel="crm" role="tabpanel" hidden>
+                <div class="notion-table-wrap">
+                  <table class="notion-table">
+                    <thead>
+                      <tr>
+                        <th>Client / Lead</th>
+                        <th>Role</th>
+                        <th>Stage</th>
+                        <th>Target Area / Notes</th>
+                        <th>Linked Deal</th>
+                        <th>Export</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="cell-title">Elena Mercer</td>
+                        <td>Buyer</td>
+                        <td><span class="status-pill status-pill--orange">Under Contract</span></td>
+                        <td class="cell-muted">Northside · Conventional loan</td>
+                        <td class="cell-muted">412 Maple Ridge Rd</td>
+                        <td><span class="tag-chip">CSV Ready</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">David Alvarez</td>
+                        <td>Seller</td>
+                        <td><span class="status-pill status-pill--yellow">Pending Close</span></td>
+                        <td class="cell-muted">Relocating · Net sheet confirmed</td>
+                        <td class="cell-muted">118 Oakwood Ave</td>
+                        <td><span class="tag-chip">CSV Ready</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">Priya Patel</td>
+                        <td>Landlord</td>
+                        <td><span class="status-pill status-pill--green">Lease Signed</span></td>
+                        <td class="cell-muted">12-month term · Walk-through next</td>
+                        <td class="cell-muted">74 Harbor St #4B</td>
+                        <td><span class="tag-chip">CSV Ready</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">Marcus &amp; Hannah Lin</td>
+                        <td>Lead (Buyer)</td>
+                        <td><span class="status-pill status-pill--neutral">Touring</span></td>
+                        <td class="cell-muted">Cash buyer · Budget $550k max</td>
+                        <td class="cell-muted">290 Cedar Grove Ct</td>
+                        <td><span class="tag-chip">CSV Ready</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- View 5: Properties & Showings -->
+              <div class="workspace-panel" data-workspace-panel="properties" role="tabpanel" hidden>
+                <div class="notion-table-wrap">
+                  <table class="notion-table">
+                    <thead>
+                      <tr>
+                        <th>Property Address</th>
+                        <th>Category</th>
+                        <th>Client</th>
+                        <th>Showing / Status</th>
+                        <th>Agent Notes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="cell-title">412 Maple Ridge Rd</td>
+                        <td><span class="tag-chip">Sale · Buyer</span></td>
+                        <td class="cell-muted">Elena Mercer</td>
+                        <td><span class="status-pill status-pill--orange">Under Contract</span></td>
+                        <td class="cell-muted">Final walkthrough booked Oct 28</td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">118 Oakwood Ave</td>
+                        <td><span class="tag-chip">Sale · Listing</span></td>
+                        <td class="cell-muted">David Alvarez</td>
+                        <td><span class="status-pill status-pill--yellow">Pending Close</span></td>
+                        <td class="cell-muted">Lockbox active until inspection clear</td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">74 Harbor St, Unit 4B</td>
+                        <td><span class="tag-chip">Rental · Lease</span></td>
+                        <td class="cell-muted">Priya Patel</td>
+                        <td><span class="status-pill status-pill--green">Leased</span></td>
+                        <td class="cell-muted">Keys &amp; condition checklist Oct 29</td>
+                      </tr>
+                      <tr>
+                        <td class="cell-title">290 Cedar Grove Ct</td>
+                        <td><span class="tag-chip">Showing</span></td>
+                        <td class="cell-muted">Marcus &amp; Hannah Lin</td>
+                        <td><span class="status-pill status-pill--neutral">Scheduled Sat 10:30</span></td>
+                        <td class="cell-muted">Second showing · Check roof disclosures</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="workspace-caption">
+                <span>
+                  <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                  Interactive Notion workspace preview · Sample deals shown for demonstration
+                </span>
+                <span>Works inside Notion's free plan on desktop &amp; mobile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           F. Simple Setup Section
+           ================================================================= -->
+      <section class="section section--white" id="setup">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+              Simple Setup
+            </span>
+            <h2 class="section-title">Up and running in about 10 minutes.</h2>
+            <p class="section-subtitle">
+              No complex integrations, API keys, or weeks of configuration. Duplicate the workspace
+              and start organising live transactions right away.
+            </p>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-card" data-reveal>
+              <span class="step-number">Step 01</span>
+              <h3 class="step-title">Duplicate the Closing Desk Notion workspace</h3>
+              <p class="step-desc">
+                Open your instant delivery link after purchase and click Duplicate into your free or
+                paid Notion account. Sample transactions are already in place to guide you.
+              </p>
+            </div>
+
+            <div class="step-card" data-reveal data-reveal-delay="1">
+              <span class="step-number">Step 02</span>
+              <h3 class="step-title">Choose the deadline sets relevant to your transactions</h3>
+              <p class="step-desc">
+                Pick from Buyer (financed or cash), Seller, or Rental (tenant &amp; landlord) sets.
+                Copy the rows you need and edit day counts to match your local contracts.
+              </p>
+            </div>
+
+            <div class="step-card" data-reveal data-reveal-delay="2">
+              <span class="step-number">Step 03</span>
+              <h3 class="step-title">Add your deals and start managing your business</h3>
+              <p class="step-desc">
+                Enter your active files, brokerage split, and client details—or delete the sample deals
+                once you're familiar with how everything connects.
+              </p>
+            </div>
+          </div>
+
+          <div class="modular-callout" data-reveal>
+            <div class="modular-callout__content">
+              <h3>Only need deadline tracking right now?</h3>
+              <p>
+                Start with three components—Deals, Deadlines, and Deadline Sets—and ignore the rest.
+                The commission calculator, CRM sidekick, and showings log are ready whenever you want them.
+              </p>
+            </div>
+            <a href="#get-closing-desk" class="btn btn--secondary" data-checkout-cta>
+              Get Closing Desk
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           G. What's Included & Good to Know
+           ================================================================= -->
+      <section class="section" id="included">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">
+              <i class="fa-solid fa-box-open" aria-hidden="true"></i>
+              Workspace Breakdown
+            </span>
+            <h2 class="section-title">Everything inside your Closing Desk download.</h2>
+            <p class="section-subtitle">
+              A clear overview of what is included in the workspace—along with plain-English notes on
+              how Notion handles deadlines and examples.
+            </p>
+          </div>
+
+          <div class="included-grid">
+            <div class="included-panel" data-reveal>
+              <h3 class="included-panel__title">What You Get</h3>
+              <ul class="included-list">
+                <li class="included-item">
+                  <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                  <div>
+                    <strong>Complete Notion Workspace</strong>
+                    <span>Organised command centre designed for solo agents on Notion's free plan.</span>
+                  </div>
+                </li>
+                <li class="included-item">
+                  <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                  <div>
+                    <strong>Deadline Tracking System</strong>
+                    <span>Due dates, countdowns, and Red, Orange, Yellow, and Green alert indicators.</span>
+                  </div>
+                </li>
+                <li class="included-item">
+                  <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                  <div>
+                    <strong>Buyer, Seller &amp; Rental Sets</strong>
+                    <span>Ready-made deadline rows for financed/cash buyers, sellers, tenants, and landlords.</span>
+                  </div>
+                </li>
+                <li class="included-item">
+                  <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                  <div>
+                    <strong>Take-Home Commission Calculator</strong>
+                    <span>Calculates real net income after brokerage splits, expenses, and tax reserves.</span>
+                  </div>
+                </li>
+                <li class="included-item">
+                  <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                  <div>
+                    <strong>CRM Sidekick</strong>
+                    <span>Manage leads, clients, properties, and showing logs in one connected database.</span>
+                  </div>
+                </li>
+                <li class="included-item">
+                  <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                  <div>
+                    <strong>Sales &amp; Rentals Support</strong>
+                    <span>Track residential purchase/listing deals alongside rental transactions cleanly.</span>
+                  </div>
+                </li>
+                <li class="included-item">
+                  <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                  <div>
+                    <strong>Preloaded Sample Deals</strong>
+                    <span>Inspect complete example files to learn the system before entering live clients.</span>
+                  </div>
+                </li>
+                <li class="included-item">
+                  <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                  <div>
+                    <strong>CSV Export Functionality</strong>
+                    <span>Export your clients and records directly via Notion so your list stays portable.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <aside class="good-to-know" data-reveal data-reveal-delay="1" aria-label="Good to know details">
+              <h3 class="good-to-know__title">
+                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                Good to know
+              </h3>
+              <ul class="good-to-know__list">
+                <li class="good-to-know__item">
+                  <strong>Deadline rows are copied manually</strong>
+                  Notion cannot automatically generate deadline rows when you add a deal. You simply
+                  copy the relevant rows from the included deadline sets and adjust dates.
+                </li>
+                <li class="good-to-know__item">
+                  <strong>Editable examples, not legal or tax advice</strong>
+                  Preloaded day counts, commission splits, and tax set-aside percentages are editable
+                  examples. Legal and tax rules vary by country and state.
+                </li>
+                <li class="good-to-know__item">
+                  <strong>Works on Notion's free plan</strong>
+                  No paid Notion subscription is required to duplicate and run the entire workspace.
+                </li>
+                <li class="good-to-know__item">
+                  <strong>Instant digital delivery &amp; refund policy</strong>
+                  Digital product with instant template link access. No refunds on digital downloads,
+                  subject to the selling platform's applicable refund policy.
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           H. Interactive FAQ Accordion Section
+           ================================================================= -->
+      <section class="section section--white" id="faq">
+        <div class="container faq-layout">
+          <div data-reveal>
+            <span class="eyebrow">
+              <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
+              Common Questions
+            </span>
+            <h2 class="section-title">Straight answers before you duplicate.</h2>
+            <p class="section-subtitle">
+              Details on Notion compatibility, how deadline rows work, data ownership, and digital
+              product terms.
+            </p>
+          </div>
+
+          <div class="faq-list" data-reveal data-reveal-delay="1">
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-ans-1"
+                id="faq-q-1"
+              >
+                <span>Do I need a paid Notion account?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer-wrap" id="faq-ans-1" role="region" aria-labelledby="faq-q-1">
+                <p class="faq-answer">
+                  No. Notion's free plan is sufficient to duplicate and run the entire Closing Desk
+                  workspace.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-ans-2"
+                id="faq-q-2"
+              >
+                <span>How long does setup take?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer-wrap" id="faq-ans-2" role="region" aria-labelledby="faq-q-2">
+                <p class="faq-answer">
+                  Setup takes approximately 10 minutes. You duplicate the workspace into your Notion
+                  account, review the preloaded sample deals, and customise your split or deadline
+                  sets. If you only need deadline tracking right away, you can start with just three
+                  components and leave the rest optional.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-ans-3"
+                id="faq-q-3"
+              >
+                <span>Can I customise the deadline dates?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer-wrap" id="faq-ans-3" role="region" aria-labelledby="faq-q-3">
+                <p class="faq-answer">
+                  Yes. Every deadline row and day count in the included sets is fully editable so you
+                  can adapt timelines to match your exact contracts, state forms, or lease terms.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-ans-4"
+                id="faq-q-4"
+              >
+                <span>Does Closing Desk automatically generate deadlines?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer-wrap" id="faq-ans-4" role="region" aria-labelledby="faq-q-4">
+                <p class="faq-answer">
+                  No. Notion cannot automatically generate new database rows for a contract. Instead,
+                  Closing Desk provides ready-made deadline sets (Buyer financed, Buyer cash, Seller,
+                  and Rental) that you copy directly into your deal and adjust as needed.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-ans-5"
+                id="faq-q-5"
+              >
+                <span>Can I use it for rentals and sales?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer-wrap" id="faq-ans-5" role="region" aria-labelledby="faq-q-5">
+                <p class="faq-answer">
+                  Yes. Closing Desk is structured to track property sales (both buyer and seller
+                  transactions) as well as rental deals (tenant and landlord) in one unified
+                  workspace.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-ans-6"
+                id="faq-q-6"
+              >
+                <span>Can I export my client information?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer-wrap" id="faq-ans-6" role="region" aria-labelledby="faq-q-6">
+                <p class="faq-answer">
+                  Yes. Because CRM Sidekick runs on standard Notion databases, you can export your
+                  leads, clients, properties, and showing notes to CSV anytime—keeping your client
+                  list yours even if you switch brokers.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-ans-7"
+                id="faq-q-7"
+              >
+                <span>Is this legal or tax advice?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer-wrap" id="faq-ans-7" role="region" aria-labelledby="faq-q-7">
+                <p class="faq-answer">
+                  No. All preloaded deadline day counts, brokerage splits, expenses, and estimated
+                  tax reserve percentages are editable examples only and do not constitute legal or
+                  tax advice. Legal and tax requirements vary by country and state.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-ans-8"
+                id="faq-q-8"
+              >
+                <span>How do I access the template after purchasing?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </button>
+              <div class="faq-answer-wrap" id="faq-ans-8" role="region" aria-labelledby="faq-q-8">
+                <p class="faq-answer">
+                  Closing Desk is a digital product with instant access. Right after checkout, you
+                  receive the template link to duplicate directly into your Notion workspace. There
+                  are no refunds on digital downloads, subject to the selling platform's applicable
+                  refund policy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           I. Final CTA Section
+           ================================================================= -->
+      <section class="section section--dark" id="get-closing-desk">
+        <div class="container">
+          <div class="final-cta" data-reveal>
+            <span class="eyebrow">Ready to Organise Every File</span>
+            <h2 class="section-title">Take control of every deal. Keep more of what you earn.</h2>
+            <p class="section-subtitle">
+              Bring your deadlines, commissions and client relationships into one organised
+              workspace.
+            </p>
+            <div class="final-cta__actions">
+              <a href="#get-closing-desk" class="btn btn--light btn--lg" data-checkout-cta>
+                Get Closing Desk
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+            <p class="final-cta__meta">
+              Instant Notion template access · Works on Notion's free plan · Set up in ~10 minutes
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================================================================
+         J. Footer
+         =================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand-col">
+            <a href="#top" class="brand brand--dark" data-asset-wrapper aria-label="Closing Desk home">
+              <!-- FOOTER LOGO IMAGE (Optional light-variant or standard logo asset) -->
+              <img
+                src="img/logo/closing-desk-logo.svg"
+                alt="Closing Desk"
+                class="brand__logo optional-asset-img"
+                data-optional-img
+              />
+              <span class="brand__fallback" aria-hidden="true">
+                <span class="brand__mark brand__mark--dark">CD</span>
+                <span class="brand__name">Closing Desk</span>
+              </span>
+            </a>
+            <p class="footer-desc">
+              A Notion workspace built for solo real estate agents to track every contract deadline,
+              estimate real take-home commission, and keep their client list portable.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Workspace</h3>
+            <ul class="footer-nav">
+              <li><a href="#features" class="footer-link">Features</a></li>
+              <li><a href="#workspace-preview" class="footer-link">Workspace Preview</a></li>
+              <li><a href="#setup" class="footer-link">Simple Setup</a></li>
+              <li><a href="#included" class="footer-link">What's Included</a></li>
+              <li><a href="#faq" class="footer-link">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Legal &amp; Access</h3>
+            <ul class="footer-nav">
+              <li>
+                <a href="#get-closing-desk" class="footer-link" data-checkout-cta>
+                  Get Closing Desk
+                </a>
+              </li>
+              <li>
+                <button type="button" class="footer-link" data-modal-trigger="privacy">
+                  Privacy Policy
+                </button>
+              </li>
+              <li>
+                <button type="button" class="footer-link" data-modal-trigger="terms">
+                  Terms of Use
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-disclaimer">
+            <strong>Digital Product &amp; Disclaimer Notice:</strong> Closing Desk is a digital
+            Notion template with instant access. No refunds on digital downloads, subject to the
+            selling platform's applicable refund policy. Preloaded day counts, commission splits, and
+            tax percentages are editable examples only and do not constitute legal or tax advice;
+            requirements vary by country and state. Not affiliated with Notion Labs, Inc.
+          </div>
+          <div>&copy; <span id="footer-year">2026</span> Closing Desk. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal for Checkout Placeholder & Legal Notices -->
+    <div
+      class="modal-backdrop"
+      id="info-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modal-title">Notice</h3>
+          <button type="button" class="modal-close" id="modal-close" aria-label="Close modal">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn--primary btn--sm" id="modal-done">Got it</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vanilla JS Modules -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

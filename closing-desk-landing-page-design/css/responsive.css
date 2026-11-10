@@ -1,0 +1,166 @@
+/* ==========================================================================
+   Closing Desk — Responsive Breakpoints (Tablet & Mobile Refinements)
+   ========================================================================== */
+
+@media (max-width: 1080px) {
+  :root {
+    --section-pad-y: 80px;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .hero-copy {
+    max-width: 620px;
+  }
+
+  .feature-showcase,
+  .feature-showcase--reverse {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding: 28px;
+  }
+
+  .feature-showcase--reverse .feature-showcase__visual {
+    order: 0;
+  }
+
+  .features-bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bento-card--crm {
+    grid-column: 1 / -1;
+  }
+
+  .set-rows-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .workspace-panel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .included-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .problem-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .workspace-two-col {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .steps-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .faq-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .footer-brand-col {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --section-pad-y: 64px;
+    --header-height: 62px;
+  }
+
+  .container {
+    padding-inline: 18px;
+  }
+
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .notion-kpi-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .notion-body {
+    padding: 14px;
+  }
+
+  .deadline-sets-panel {
+    padding: 22px 18px;
+  }
+
+  .set-rows-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .features-bento {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .feature-showcase,
+  .feature-showcase--reverse {
+    padding: 22px 18px;
+  }
+
+  .calc-inputs {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .workspace-panel {
+    padding: 16px;
+  }
+
+  .workspace-panel-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .included-panel,
+  .good-to-know {
+    padding: 22px 18px;
+  }
+
+  .included-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .footer-top {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .modular-callout {
+    padding: 18px;
+  }
+}
